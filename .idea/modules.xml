@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/modules/springcloudlearn-parent/springcloudlearn-parent.iml" filepath="$PROJECT_DIR$/modules/springcloudlearn-parent/springcloudlearn-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/springcloudlearn-parent/springlearn-eureka/springlearneureka.iml" filepath="$PROJECT_DIR$/modules/springcloudlearn-parent/springlearn-eureka/springlearneureka.iml" />
+    </modules>
+  </component>
+</project>
