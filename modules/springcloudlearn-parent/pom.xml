@@ -32,6 +32,7 @@
         <module>springlearn-eureka</module>
         <module>service-provider-user</module>
         <module>service-consumer-movie</module>
+        <module>service-consumer-movie-ribbon</module>
     </modules>
 
     <properties>

@@ -1,0 +1,11 @@
+server:
+  port: 7901
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://ljy:123456@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: service-consumer-movie-ribbon
