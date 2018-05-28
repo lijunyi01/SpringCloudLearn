@@ -24,7 +24,7 @@ public class MovieController {
 
     @GetMapping("/movie/{id}")
     public User findById(@PathVariable Long id){
-        //service-provider-uesr 可以理解为虚拟ip -- vip；对应于服务提供者在 eureka里显示的名字
-        return restTemplate.getForObject("http://service-provider-uesr/user/"+id,User.class);
+        //service-provider-user 可以理解为虚拟ip(含端口) -- vip；对应于服务提供者在 eureka里显示的名字
+        return restTemplate.getForObject("http://service-provider-user/user/"+id,User.class);
     }
 }
