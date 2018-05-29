@@ -33,6 +33,7 @@
         <module>service-provider-user</module>
         <module>service-consumer-movie</module>
         <module>service-consumer-movie-ribbon</module>
+        <module>service-consumer-moive-feign</module>
     </modules>
 
     <properties>
