@@ -10,8 +10,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 //而@EnableDiscoveryClient 可以注册到zk等其它服务注册器
 @EnableEurekaClient
 //@EnableDiscoveryClient
-public class Application {
+public class ProviderUserApplication {
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(ProviderUserApplication.class, args);
     }
 }

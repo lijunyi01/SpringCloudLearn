@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 @SpringBootApplication
+// 混合注解，包含了@EnableCircuitBreaker ；为何没有@EnableEurekaClient 也可以注册到eureka？
 @EnableZuulProxy
 public class ZuulApplication {
 
