@@ -11,3 +11,9 @@ eureka:
 spring:
   application:
     name: service-gateway-zuul
+
+zuul:
+  ignore-services: '*'
+  sensitive-headers: Cookie,Set-Cookie,Authorization
+  routes:
+    service-provider-user: spuser/**
