@@ -35,6 +35,7 @@
         <module>service-consumer-movie-ribbon</module>
         <module>service-consumer-movie-ribbon-with-hystrix</module>
         <module>service-consumer-moive-feign</module>
+        <module>service-consumer-moive-feign-with-hystrix</module>
         <module>service-gateway-zuul</module>
     </modules>
 
