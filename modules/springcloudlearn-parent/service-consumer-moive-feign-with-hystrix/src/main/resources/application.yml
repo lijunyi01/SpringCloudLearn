@@ -9,12 +9,11 @@ eureka:
 spring:
   application:
     name: service-consumer-movie-feign-with-hystrix
-
 feign:
+  hystrix:
+    enabled: true
   client:
     config:
       default:
         connectTimeout: 5000
         readTimeout: 5000
-  hystrix:
-    enabled: true
