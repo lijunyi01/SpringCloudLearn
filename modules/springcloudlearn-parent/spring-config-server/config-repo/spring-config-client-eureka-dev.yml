@@ -1,0 +1,5 @@
+profile: dev
+username: lijunyi
+
+server:
+  port: 8882
