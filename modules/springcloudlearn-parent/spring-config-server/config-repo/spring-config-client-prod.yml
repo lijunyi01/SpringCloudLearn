@@ -1,2 +1,5 @@
 profile: prod
 username: wangfeng
+
+server:
+  port: 8882
