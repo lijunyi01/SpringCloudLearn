@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: spring-config-server
+    name: spring-config-server-eureka
 
   cloud:
     config:

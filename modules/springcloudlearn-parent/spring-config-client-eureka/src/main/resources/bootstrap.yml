@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-config-client-eureka
+
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: spring-config-server-eureka
+      username: ljy
+      password: 123456
+      label: master
+      profile: dev
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://ljy:123456@localhost:8761/eureka
