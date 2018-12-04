@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: spring-config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lijunyi01/SpringCloudLearn.git
+          search-paths: modules/springcloudlearn-parent/spring-config-server/config-repo/
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://ljy:123456@localhost:8761/eureka
+
+security:
+  basic:
+    enabled: true
+  user:
+    password: 123456
+    name: ljy
