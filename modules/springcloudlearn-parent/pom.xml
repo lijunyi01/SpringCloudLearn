@@ -24,6 +24,12 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!-- spring cloud config 版本管理需要-->
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.cloud</groupId>-->
+                <!--<artifactId>spring-cloud-config</artifactId>-->
+                <!--<version>1.4.3.RELEASE</version>-->
+            <!--</dependency>-->
         </dependencies>
     </dependencyManagement>
 
@@ -38,6 +44,8 @@
         <module>service-consumer-moive-feign-with-hystrix</module>
         <module>service-gateway-zuul</module>
         <module>service-hystrix-dashboard</module>
+        <module>service-hystrix-turbine</module>
+        <module>spring-config-server</module>
     </modules>
 
     <properties>
