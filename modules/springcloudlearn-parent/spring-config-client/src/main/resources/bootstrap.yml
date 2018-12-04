@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring-config-client
+
+  cloud:
+    config:
+      uri: http://localhost:8080
+      profile: prod
+      label: master  # config server 用git backend 时，默认值为master
+

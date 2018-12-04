@@ -46,6 +46,7 @@
         <module>service-hystrix-dashboard</module>
         <module>service-hystrix-turbine</module>
         <module>spring-config-server</module>
+        <module>spring-config-client</module>
     </modules>
 
     <properties>
