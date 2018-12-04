@@ -47,6 +47,8 @@
         <module>service-hystrix-turbine</module>
         <module>spring-config-server</module>
         <module>spring-config-client</module>
+        <module>spring-config-server-eureka</module>
+        <module>spring-config-client-eureka</module>
     </modules>
 
     <properties>
