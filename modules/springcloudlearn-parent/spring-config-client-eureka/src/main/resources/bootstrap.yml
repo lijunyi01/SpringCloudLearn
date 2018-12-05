@@ -11,7 +11,13 @@ spring:
       password: 123456
       label: master
       profile: dev
+
 eureka:
   client:
     serviceUrl:
       defaultZone: http://ljy:123456@localhost:8761/eureka
+
+#访问actuator的服务端口默认需要安全验证，这里为了简化，disable调安全验证
+management:
+  security:
+    enabled: false

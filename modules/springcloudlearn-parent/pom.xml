@@ -49,6 +49,7 @@
         <module>spring-config-client</module>
         <module>spring-config-server-eureka</module>
         <module>spring-config-client-eureka</module>
+        <module>spring-config-client-eureka-bus</module>
     </modules>
 
     <properties>
