@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: spring-config-client-eureka
+
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: spring-config-server-eureka
+      username: ljy
+      password: 123456
+      label: master
+      profile: dev
+    bus:             #跟踪用（激活访问/trace端点）
+      trace:
+        enabled: true
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://ljy:123456@localhost:8761/eureka
+
+#访问actuator的服务端口默认需要安全验证，这里为了简化，disable调安全验证
+management:
+  security:
+    enabled: false
