@@ -32,9 +32,10 @@
                 <version>1.0.0</version>
 
                 <configuration>
+                    <dockerHost>http://192.168.8.160:2376</dockerHost>
                     <!--覆盖相同标签镜像-->
                     <forceTags>true</forceTags>
-                    <imageName>192.168.168.178:5000/lijunyi/eureka:1.0</imageName>
+                    <imageName>192.168.8.161:5000/lijunyi/eureka:1.0</imageName>
                     <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
                     <resources>
                         <resource>
