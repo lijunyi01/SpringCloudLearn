@@ -2,8 +2,6 @@ server:
   port: 9061
 
 spring:
-#  profiles:
-#      active: peer2
   jpa:
     generate-ddl: false
     show-sql: true
@@ -22,38 +20,10 @@ logging:
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
     org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
     com.itmuch: DEBUG
-#eureka:
-#  client:
-#    serviceUrl:
-#      defaultZone: http://ljy:123456@ljyserver1:8761/eureka,http://ljy:123456@ljyserver2:8762/eureka
-#  instance:
-#    prefer-ip-address: false
 
 #访问actuator的服务端口默认需要安全验证，这里为了简化，disable调安全验证
 management:
   security:
     enabled: false
-
-
----
-spring:
-  profiles: peer1
-
-server:
-  port: 9061
-
-
----
-spring:
-  profiles: peer2
-
-server:
-  port: 9062
-
-
----
-spring:
-  profiles: dev
-  port: 9063
 
 
