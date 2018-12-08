@@ -1,6 +1,9 @@
+server:
+  port: 9061
+
 spring:
-  profiles:
-      active: peer2
+#  profiles:
+#      active: peer2
   jpa:
     generate-ddl: false
     show-sql: true
@@ -46,5 +49,11 @@ spring:
 
 server:
   port: 9062
+
+
+---
+spring:
+  profiles: dev
+  port: 9063
 
 
