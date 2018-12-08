@@ -31,4 +31,31 @@
         
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>1.0.0</version>
+
+                <configuration>
+                    <dockerHost>http://192.168.8.160:2376</dockerHost>
+                    <!--覆盖相同标签镜像-->
+                    <forceTags>true</forceTags>
+                    <imageName>192.168.8.161:5000/lijunyi/configserver:1.0</imageName>
+                    <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+
+                    <serverId>private-docker-registry</serverId>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
