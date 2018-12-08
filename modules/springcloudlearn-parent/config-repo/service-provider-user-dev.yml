@@ -1,6 +1,6 @@
-server:
-  port: 7900
 spring:
+  profiles:
+      active: peer1
   jpa:
     generate-ddl: false
     show-sql: true
@@ -22,8 +22,29 @@ logging:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://ljy:123456@localhost:8761/eureka
+      defaultZone: http://ljy:123456@ljyserver1:8761/eureka,http://ljy:123456@ljyserver2:8762/eureka
   instance:
-    prefer-ip-address: true
+    prefer-ip-address: false
+
+#访问actuator的服务端口默认需要安全验证，这里为了简化，disable调安全验证
+management:
+  security:
+    enabled: false
+
+
+---
+spring:
+  profiles: peer1
+
+server:
+  port: 9061
+
+
+---
+spring:
+  profiles: peer2
+
+server:
+  port: 9062
 
 
