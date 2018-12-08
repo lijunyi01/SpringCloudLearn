@@ -7,8 +7,8 @@ RUN bash -c 'touch /app.jar'
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-#开放8761端口
-EXPOSE 8761
+#开放8761/8762端口
+EXPOSE 8761 8762
 
 #配置容器启动后执行的命令
 ENTRYPOINT ["java","-Djava.security.edg=file:/dev/./urandom","-jar","/app.jar"]

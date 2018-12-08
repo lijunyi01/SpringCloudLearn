@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: service-provider-user
+
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: spring-config-server-eureka
+      username: ljy
+      password: 123456
+      label: master
+      profile: dev
+    bus:             #跟踪用（激活访问/trace端点）
+      trace:
+        enabled: true
+
+  rabbitmq:
+    host: ljyserver2
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://ljy:123456@ljyserver1:8761/eureka,http://ljy:123456@ljyserver2:8762/eureka
